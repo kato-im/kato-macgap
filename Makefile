@@ -1,0 +1,2 @@
+macgap:
+	macgap build kato
