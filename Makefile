@@ -1,7 +1,7 @@
 all: macgap dmg
 
 macgap:
-	macgap build kato
+	macgap build --name Kato Kato
 
 dmg:
 	./image/MakeDMG.sh

@@ -8,8 +8,8 @@ rm ./Kato.dmg ./Kato_10MB.dmg
 hdiutil create -size 10m -fs HFS+ -type UDIF -volname Kato -ov ./Kato_10MB.dmg
 hdiutil mount ./Kato_10MB.dmg
 # copy all app and installer files
-cp -r ../kato.app ./.meta/.???* /Volumes/Kato/
-ln -s /Applications/ "/Volumes/Kato/ "
+cp -r ../Kato.app ./.meta/.???* /Volumes/Kato/
+ln -s /Applications/ "/Volumes/Kato/Applications"
 # convert to RO installer image
 hdiutil detach /Volumes/Kato
 hdiutil convert -format UDZO -o ./Kato.dmg ./Kato_10MB.dmg
